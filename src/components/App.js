@@ -7,7 +7,7 @@ function App() {
   const [currentTime, setCurrentTime] = useState(time);
   const updateTime = () => {
     time = new Date().toLocaleTimeString();
-    setCurrentTime(currentTime);
+    setCurrentTime(time);
   }
   setInterval(updateTime, 1000);
   return (
